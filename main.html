@@ -22,12 +22,12 @@
         <h1 class=" text-2xl font-bold mb-2">Welcome to payooo!</h1>
         <p>Enjoy easy and conveninet financial services with us.Cashout charge is low and</p>
         <div class="cards grid grid-cols-3 mt-14 gap-3 p-3">
-            <div class="box cursor-pointer border p-4 text-center rounded-sm">
+            <div id="add-moneyBox" class="box cursor-pointer border p-4 text-center rounded-sm">
                 <img class="w-8 mx-auto" src="assets/wallet1.png" alt="">
                 <h3>Add Money</h3>
 
             </div>
-            <div class="box cursor-pointer border p-4 text-center rounded-sm">
+            <div id="cashout-box" class="box cursor-pointer border p-4 text-center rounded-sm">
                 <img class="w-8 mx-auto" src="assets/send1.png" alt="">
                 <h3>Cash Out</h3>
 
@@ -54,7 +54,7 @@
             </div>
 
         </div>
-        <section>   
+        <section id="addmoney">   
             <h1>Add Money</h1>
             <!-- login form -->
             
@@ -84,9 +84,33 @@
 </div>
 
         </section>
+        <section id="cashout" >
+           <h2>Cash out</h2>
+          <div class=" hero-content flex-col lg:flex-row-reverse">
+    <div class="card  w-full max-w-sm shrink-0 shadow-2xl ">
+      <div class="card-body ">
+         
+          <fieldset class="fieldset">
+          <label class="label">Account number</label>
+          <input value="12345678910" id="account-num" type="number" class="input" placeholder="Enter your account number"required/>
+          <label class="label">Amount</label>
+          <input value="" id="amount" type="number" class="input" placeholder="Enter amount"required/>
+          <label class="label">Pin</label>
+          <input value="1234" id="password" type="text" class="input" placeholder="Enter your pin number" required />
+          <div><a class="link link-hover">Forgot pin?</a></div>
+          <button id="add-money" type="submit"  id="login-btn" class="btn btn-neutral mt-4 bg-blue-700 border-none">Cashout</button>
+        </fieldset>
+        </div>
+        </div>
+        </div>
+
+
+        </section>
     </section>
 </header>
  </section>
- <script src="./script/addMoney.js"></script>
+ <script src="./script/recap.js"></script>
+ <!-- <script src="./script/addMoney.js"></script> -->
+  <script src="./script/toggole.js"></script>
 </body>
 </html>
